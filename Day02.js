@@ -8,28 +8,40 @@ let fahrenheit = 9 / 5 * celsius + 32;
 // OUTPUT
 console.log(fahrenheit);
 
-//2
+// soal 2 : Write a code to check whether the number is odd or even
+// INPUT : angka; 
+let x = 3;
+let hasilModulo = 0;
+// OUTPUT : angka termaasuk 'bilangan genap' atau 'bilangan ganjil'
 
+// PROCESS : 
+//1. angka termasuk genap bila habis dibagi 2
+if (x % 2 === 0){
+    hasilModulo = "Bilangan Genap";
+} else {
+    hasilModulo = "Bilangan Ganjil";
+}
+ console.log(hasilModulo);
 
 
 // 3 Write a code to check whether the number is prime number or not
 // INPUT = data number
 // PROCESS
-let angka = 8;
+let angka = 9;
 let hasilAngka = "";
 
-for (let start = 2; start <= angka; start++)
-// habis dibagi dirinya sendiri
-if (start === angka){
-    hasilAngka = "bilangan prima";
-// bisa dibagi bilangan lain
-} else if (angka % start === 0){
-    hasilAngka = "bukan bilangan prima";
-    break;
-} else {
-    hasilAngka = "bilangan prima";
+for (let start = 2; start <= angka; start++) {
+    // habis dibagi dirinya sendiri
+    if (angka == start){
+        hasilAngka = "bilangan prima";
+    // bisa dibagi bilangan lain
+    } else if (angka % start === 0){
+        hasilAngka = "bukan bilangan prima";
+        break;
+    } else {
+        hasilAngka = "bilangan prima";
+    }
 }
-
 console.log(hasilAngka);
 
 
@@ -53,11 +65,12 @@ console.log(hasil);
 
 // PROCESS
 // deklarasi data
-let h = 6;
+let h = 4;
 let p = 1;
 // mencari FACTORIAL : angka tertinggi dikali dengan angka dibawahnya sampai batas yang ditentukan, 1.
 for (let y = h; y >= 1; y--){
     p = p * y;
+    console.log(y);
 }
 console.log(p);
 

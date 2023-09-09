@@ -52,7 +52,7 @@ console.log(sudutC);
 
 //5 get difference between dates in days
 // INPUT
-const tanggalA = new Date("09/01/2023");
+const tanggalA = new ("09/01/2023");
 const tanggalB = new Date("09/04/2023");
 
 // PROCESS

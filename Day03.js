@@ -39,6 +39,7 @@ if (kataPertama.toLowerCase() === kataKedua.toLowerCase()) {
 
 console.log(hasilPal);
 
+
 // soal ke 3 : Write a code to convert centimeter to kilometer.
 // INPUT : konversi cm ke km; diketahui cm =; km=;
 // 1. mengetahui nilai cm ke km
@@ -72,7 +73,24 @@ console.log(hasilInput);
 
 //soal ke 6 : Write a code to capitalize the first letter of each word in a string
 // INPUT : data string,
-
+let inputCap = "hello world indonesia";
+console.log(inputCap.length);
+let resultCap = "";
+// OUTPUT :
+// PROCESS :
+for (let loopCap = 0; loopCap <= inputCap.length; loopCap++) {
+    console.log(loopCap);
+    
+    //let charAtCap = inputCap.charAt(loopCap);
+    if (loopCap === 0){
+        resultCap += inputCap.charAt(0).toUpperCase()
+    } else if (inputCap.charAt(loopCap - 1) === " ") {
+        resultCap += inputCap.charAt(loopCap).toUpperCase()
+    } else {
+        resultCap = resultCap + inputCap.charAt(loopCap)
+    }
+}
+console.log(resultCap);
 
 // carane rehan
 // let kalimat = "halo dulur dulur";
@@ -106,6 +124,28 @@ console.log(hasilReverse);
 
 
 // soal ke 8 : Write a code to swap the case of each character from string
+// INPUT : data string; 
+let inputSoal = "The";
+let hasilSwap = "";
+
+// OUTPUT : diganti yg kapital jadi kecil, kecil jadi kapital
+// PROCESS : 1. mencari index per huruf dengan loop
+
+for (let loopSwap = 0; loopSwap <= inputSoal.length - 1; loopSwap++) {
+
+    // penyederhanaan
+    const ygDicek = inputSoal.charAt(loopSwap)
+
+    if (ygDicek == ygDicek.toLowerCase()) {
+        hasilSwap += ygDicek.toUpperCase();
+    } else if (ygDicek == ygDicek.toUpperCase()) {
+        hasilSwap += ygDicek.toLowerCase();
+    }
+}
+
+console.log(hasilSwap);
+
+
 
 // soal ke 9 : Write a code to find the largest of two given integers
 // INPUT : 2 data number; 
@@ -126,15 +166,86 @@ if (number1 < number2) {
 
 console.log(hasilLargest);
 
+
 //soal ke 10 : Write a conditional statement to sort three numbers
 // INPUT : conditional statement if; 3 data number; 
-let input1 = 2;
-let input2 = 4;
-let input3 = -2;
+let x = 2;
+let y = 1;
+let z = 3;
 let hasilUrutan = "";
+
 // OUTPUT : 3 data number berurutan
 // PROCESS :
 // 1. membuat if
-if (input1 >= input2 >= input3) {
-    
+if (x > y && x > z) {
+    hasilUrutan = `${x}`;
+    if (z > y) {
+        hasilUrutan = `${x}, ${z}, ${y}`;
+    } else {
+        hasilUrutan = `${x}, ${y}, ${z}`;
+    }
 }
+if (y > x && y > z) {
+    hasilUrutan = `${y}`;
+    if (z > x) {
+        hasilUrutan = `${y}, ${z}, ${x}`;
+    } else {
+        hasilUrutan = `${y}, ${x}, ${z}`;
+    }
+}
+if (y > x && y > z) {
+    hasilUrutan = `${y}`;
+    if (z > x) {
+        hasilUrutan = `${y}, ${z}, ${x}`;
+    } else {
+        hasilUrutan = `${y}, ${x}, ${z}`;
+    }
+}
+if (z > x && z > y) {
+    hasilUrutan = `${z}`;
+    if (y > x) {
+        hasilUrutan = `${z}, ${y}, ${x}`;
+    } else {
+        hasilUrutan = `${z}, ${x}, ${y}`;
+    }
+}
+
+console.log(hasilUrutan);
+
+
+
+// soal ke 11 : Write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data type.
+// INPUT : 
+let dataInput = "";
+let dataBox = "";
+// OUTPUT : jika data "string" = 1, number = 2, otherDataType = 3;
+// PROCESS :
+// 1. mencari jenis data dengan typeOf
+console.log(typeof (dataInput))
+if (typeof(dataInput) === "string") {
+    dataBox = `1`;
+} else if (typeof(dataInput) === "number") {
+    dataBox = `2`;
+} else {
+    dataBox = `3`;
+}
+console.log(dataBox);
+
+
+// soal ke 12 : Write a code to change every letter a into * from a string of input
+// INPUT : data berupa string;
+let dataForChange = "An apple a day keeps the doctor away";
+console.log(dataForChange.length);
+let hasilChange = "";
+
+// OUTPUT : karakter yg diinputkan akan menjadi *
+// PROCESS : 1. membuat loop
+for (let loopChange = 0; loopChange <= dataForChange.length; loopChange++) {
+    console.log(loopChange);
+    let charAtChange = dataForChange.charAt(loopChange);
+    if (charAtChange.toLowerCase() === "a") {
+        charAtChange = "*";
+    }
+    hasilChange += charAtChange
+}
+console.log(hasilChange);

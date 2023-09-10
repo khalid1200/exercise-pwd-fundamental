@@ -1,4 +1,4 @@
-// 1 Write a code to convert celsius to fahrenheit
+// soal 1 : Write a code to convert celsius to fahrenheit
 // INPUT
 let celsius = 40;
 
@@ -24,7 +24,7 @@ if (x % 2 === 0){
  console.log(hasilModulo);
 
 
-// 3 Write a code to check whether the number is prime number or not
+// soal 3 : Write a code to check whether the number is prime number or not
 // INPUT = data number
 // PROCESS
 let angka = 9;
@@ -45,7 +45,7 @@ for (let start = 2; start <= angka; start++) {
 console.log(hasilAngka);
 
 
-// 4 Write a code to find the sum of the numbers 1 to N
+// soal 4 : Write a code to find the sum of the numbers 1 to N
 // INPUT
 // data number
 
@@ -60,7 +60,7 @@ for (let v = 1; v <= n; v++){
 console.log(hasil);
 
 
-//5 Write a code to find factorial of a number.
+// soal 5 : Write a code to find factorial of a number.
 // INPUT : berupa data number
 
 // PROCESS
@@ -75,4 +75,4 @@ for (let y = h; y >= 1; y--){
 console.log(p);
 
 
-//6 
+// soal 6 :  

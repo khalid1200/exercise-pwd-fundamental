@@ -65,7 +65,7 @@ console.log(hasil);
 
 // PROCESS
 // deklarasi data
-let h = 4;
+let h = 30;
 let p = 1;
 // mencari FACTORIAL : angka tertinggi dikali dengan angka dibawahnya sampai batas yang ditentukan, 1.
 for (let y = h; y >= 1; y--){
